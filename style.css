@@ -1,0 +1,27 @@
+body {
+  padding: 25px;
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: #1a150e;
+  font-size: 15px;
+}
+
+.dark-mode {
+  background-image: linear-gradient(100deg, #001214, #165164);
+  color: white;
+}
+
+.darkButton {
+  display: flex;  justify-content: right;
+  align-items: center;
+  height: 25px;
+  border: 0px solid white; 
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
