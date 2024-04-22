@@ -16,6 +16,9 @@ function addTodo(event) {
   newtoDo.classList.add("todo-item");
   todoDiv.appendChild(newtoDo);
 
+  // Adding to local storage;
+  savelocal(todoInput.value);
+
   const completedButton = document.createElement("button");
   completedButton.innerHTML = "✔";
   completedButton.classList.add("complete-btn");
@@ -50,4 +53,17 @@ function darkMode() {
   element.classList.toggle("dark-mode");
 }
 
+// Saving to local storage:
+function savelocal(todo){
+  //Check: if item/s are there;
+  let todos;
+  if(localStorage.getItem('todos') === null) {
+      todos = [];
+  }
+  else {
+      todos = JSON.parse(localStorage.getItem('todos'));
+  }
 
+  todos.push(todo);
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
