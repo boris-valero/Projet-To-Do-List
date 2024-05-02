@@ -1,9 +1,47 @@
+h1 {
+  display: flex;  
+  justify-content: center;
+}
+
+form{
+  display: flex;  
+  justify-content: center;
+  gap: 10px;
+  }
+
+  .todo-input{
+    border-radius: 30px;
+    border: solid;
+  }
+
+  .todo-button{
+    border-radius: 30px;
+  }
+
 body {
   padding: 25px;
   background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
   color: #1a150e;
   font-size: 15px;
 }
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  color: white;
+  background: #ff6f47;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem;
+}
+.complete-btn {
+  background: rgb(83, 196, 83);
+}
+
 
 .dark-mode {
   background-image: linear-gradient(100deg, #001214, #165164);
